@@ -21,5 +21,31 @@
 	parseFloat(document.frm.s1.value)+parseFloat(document.frm.s2.value);
 	}
   </script>
+
+
+  </body>
+</html>		
+  </body>
+</html>		
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+	计数：<span id="countspan"></span>
+	<a href="#" onclick="countNumber();">点击</a>
+<script type="text/javascript">
+if(!localStorage.countAll){
+                                                                                                
+    localStorage.countAll = 0;
+}
+document.getElementById('countspan').innerHTML = localStorage.countAll;
+function countNumber(){
+    localStorage.countAll++;
+    document.getElementById('countspan').innerHTML = localStorage.countAll;
+}
+</script>
+
   </body>
 </html>		
