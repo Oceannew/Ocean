@@ -1,22 +1,13 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link href="css/styles.css" rel="stylesheet">
+	<title>6</title>
   </head>
   <body>
-	计数：<span id="countspan"></span>
-	<a href="#" onclick="countNumber();">点击</a>
-<script type="text/javascript">
-if(!localStorage.countAll){
-                                                                                                
-    localStorage.countAll = 0;
-}
-document.getElementById('countspan').innerHTML = localStorage.countAll;
-function countNumber(){
-    localStorage.countAll++;
-    document.getElementById('countspan').innerHTML = localStorage.countAll;
-}
-</script>
+	<form name = "frm" >
+	<input type="text" name="tl" value= "初始值为你好">
+	<input type="button" value="引用文本框的值" onclick="alert(document.frm.t1.value)">
+	<input type="button" value="代码动态改变文本框的值为早上好" onclick="document.frm.t1.value='早上好'">
+</form >
 
   </body>
-</html>		
+</html>
